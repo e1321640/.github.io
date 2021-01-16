@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*リセットCSS*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/*基本設定*/
+body {
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+}
+
+
+/*ヘッダーの設定*/
+.logo-area a {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.logo-area p {
+  color: #777;
+  font-size: 18px;
+}
+
+.logo-area a:hover {
+  opacity: 0.7;
+}
+
+.gnav {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu-area ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-area li {
+  padding-right: 30px;
+}
+
+.menu-area i {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.search-area i {
+  font-size: 20px;
+}
+
+/*メインビジュアルの設定*/
+.main-text {
+  color: #777;
+  font-size: 27px;
+  margin: 80px 0;
+}
+
+/*記事の設定*/
+article {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 60px;
+}
+
+article div:first-child {
+  flex: 1;
+}
+
+article div:last-child {
+  flex: 2;
+}
+
+article div:first-child a {
+  color: #666;
+}
+
+article div:last-child a {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+article div:last-child p {
+  font-size: 16px;
+  color: #666;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.next a {
+  border: solid 1px #ccc;
+  padding: 10px 20px;
+  margin-right: 10px;
+  color: #666;
+}
+
+.next a:first-child {
+  background: #eee;
+  font-weight: bold;
+  color: #000;
+}
+
+.next i {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+/*フッターの設定*/
+footer {
+  border-top: solid 1px #ddd;
+}
+
+.footer-top {
+  display: flex;
+  margin: 80px 0;
+}
+
+.footer-top > div {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.footer-top > div:last-child {
+  padding-right: 0;
+}
+
+.color-text {
+  color: #666;
+}
+
+.footer-title {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profile-area img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name p {
+  font-weight: bold;
+}
+
+.name i {
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.resent-posts div, .category div {
+  margin-bottom: 15px;
+}
+
+.resent-posts a, .category a {
+  text-decoration: underline;
+  text-decoration-color: #ddd;
+}
+
+.category input {
+  width: 200px;
+  margin-top: 40px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.footer-bottom {
+  border-top: solid 1px #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.footer-bottom div {
+  width: 200px;
+}
+
+.footer-bottom::after {
+  content: "";
+  display: block;
+  width: 200px;
+}
+
+.footer-bottom div i {
+  margin-right: 20px;
+  color: #aaa;
+  font-size: 25px;
+}
+
+.footer-bottom small {
+  color: #666;
+}
+
+.footer-bottom small a {
+  color: #333;
+}
+
+.footer-bottom small a:hover {
+  color: #111;
+}
